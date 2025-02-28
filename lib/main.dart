@@ -1,6 +1,6 @@
-import 'package:account/AIChatbotScreen.dart';
+
 import 'package:account/AICoursesScreen.dart';
-import 'package:account/AIModelTesting.dart';
+
 import 'package:account/AIQuizScreen.dart';
 import "package:flutter/material.dart";
 import 'package:account/provider/aiToolProvider.dart';
@@ -81,19 +81,19 @@ class AIToolHomePage extends StatelessWidget {
                     icon: Icons.quiz,
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AIQuizScreen())),
                   ),
-                  _buildMenuCard(
-                    context,
-                    title: "🖼️ ทดลองโมเดล AI",
-                    subtitle: "อัปโหลดภาพและให้ AI วิเคราะห์",
-                    icon: Icons.image_search,
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AIModelTesting())),
-                  ),
-                  _buildMenuCard(
-                    context,
-                    title: "💬 แชทกับ AI Tutor",
-                    subtitle: "พูดคุยและถามคำถามเกี่ยวกับ AI",
-                    icon: Icons.chat,
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AIChatbotScreen())),
+                  // _buildMenuCard(
+                  //   context,
+                  //   title: "🖼️ ทดลองโมเดล AI",
+                  //   subtitle: "อัปโหลดภาพและให้ AI วิเคราะห์",
+                  //   icon: Icons.image_search,
+                  //   // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AIModelTesting())),
+                  // ),
+                  // _buildMenuCard(
+                  //   context,
+                  //   title: "💬 แชทกับ AI Tutor",
+                  //   subtitle: "พูดคุยและถามคำถามเกี่ยวกับ AI",
+                  //   icon: Icons.chat,
+                  //   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AIChatbotScreen())),
                   ),
                 ],
               ),
